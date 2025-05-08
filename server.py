@@ -20,7 +20,7 @@ stream = pa.open(format=FORMAT, channels=CHANNELS, rate=RATE,
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
 
-print(f"Broadcasting audio to {BROADCAST_IP}:{PORT}...")
+print(f"🎙️ Broadcasting audio to {BROADCAST_IP}:{PORT}...")
 
 while True:
     data = stream.read(CHUNK, exception_on_overflow=False)
